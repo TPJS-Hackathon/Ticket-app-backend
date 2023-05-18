@@ -24,7 +24,7 @@ const createUser = (req, res) => {
           res.status(500).send("Error accessing the db.");
         });
     });
-  };
+};
 
 
   const loginUser = (req, res) => {
