@@ -17,14 +17,8 @@ const signUpUser = (req, res, next) => {
         })
 }
 
-const loginUser = (req, res) => {
-    const { email, password } = req.body
-
-
-}
 
 
 module.exports = {
     signUpUser,
-    loginUser
 }
