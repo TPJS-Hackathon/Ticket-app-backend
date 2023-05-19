@@ -1,16 +1,24 @@
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(50) UNIQUE NOT NULL,
-    hashedPassword VARCHAR(255) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    hashedPassword VARCHAR(255) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4;
 
 INSERT INTO
-    users ( email, hashedPassword)
+       users (email, hashedPassword)
 VALUES
-    (
-       'johndoe@example.com',
-       '4b45cc4b2c1d54cd4fa7389ac9f63e7a' 
-    )    
+       (
+              'johndoe@example.com',
+              '4b45cc4b2c1d54cd4fa7389ac9f63e7a'
+       ),
+       (
+              'donaldbaley@example.com',
+              '5v6EMSkESzQOlyKiBCPvvRgw4ymU7pWF'
+       ),
+       (
+              'charlesmoore@example.com',
+              'VxR0wNHff3AWvYHEYsf8UGpz5uDf03Bk'
+       );
 
 
 

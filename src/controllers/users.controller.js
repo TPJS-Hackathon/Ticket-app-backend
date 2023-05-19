@@ -59,7 +59,17 @@ const createUser = (req, res) => {
 }
 
 
+const getAllUsers = (req, res) => {
+  User.getAll()
+    .then(results => res.status(200).json(results))
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send("Error retrieving passport from db");
+    });
+}
+
 module.exports = {
     createUser,
-    loginUser
+    loginUser,
+    getAllUsers
 }
