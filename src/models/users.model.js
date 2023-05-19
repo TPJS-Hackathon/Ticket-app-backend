@@ -13,7 +13,14 @@ const findEmail = (email) =>  {
     .then(([results]) => results)
 }
 
+const getAll = () => {
+    return database
+    .query("SELECT * from users")
+    .then(([results]) => results)
+}
+
 module.exports = {
     create,
     findEmail,
+    getAll,
 }
